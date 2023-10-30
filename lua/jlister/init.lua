@@ -1,1 +1,1 @@
-require("options")
+require("jlister/options")
