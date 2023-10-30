@@ -29,6 +29,3 @@ vim.opt.history = 100
 vim.opt.lazyredraw = true
 vim.opt.synmaxcol = 240
 vim.opt.updatetime = 250
-
-
-
