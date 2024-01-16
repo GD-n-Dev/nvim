@@ -1,16 +1,10 @@
-vim.cmd.highlight({ "link", "Warning", "Error" })
-
--- VIM.KEYMAPS
-vim.g.mapleader = ' '
-vim.keymap.set('n', '<Leader>pv', '<cmd>Lexplore<cr>')
-
 -- VIM.OPTIONS may change
 vim.opt.relativenumber = true
 vim.opt.cmdheight = 4
 
 -- VIM.OPTIONS
 vim.opt.mouse = 'a'
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard= "unnamedplus"
 vim.opt.swapfile = false
 vim.opt.showmatch = true
 -- vim.opt.colorcolumn = '80'
