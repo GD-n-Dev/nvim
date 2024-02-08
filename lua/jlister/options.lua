@@ -1,5 +1,6 @@
 -- VIM.OPTIONS may change
 vim.opt.relativenumber = true
+vim.opt.number = true
 vim.opt.cmdheight = 4
 
 -- VIM.OPTIONS
@@ -13,8 +14,8 @@ vim.opt.smartcase = true
 vim.opt.linebreak = true
 vim.opt.termguicolors = true
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 vim.opt.smartindent = true
 
 -- VIM.OPTIONS CPU MEMORY
