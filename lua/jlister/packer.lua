@@ -18,10 +18,7 @@ return require('packer').startup(function(use)
 
   vim.cmd('colorscheme rose-pine')
 
-  use {
-      'nvim-treesitter/nvim-treesitter',
-      run = ':TSUpdate',
-  }
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -41,5 +38,7 @@ return require('packer').startup(function(use)
       }
   }
 
+  use "nvim-lua/plenary.nvim"
+  use "ThePrimeagen/harpoon"
 
 end)
