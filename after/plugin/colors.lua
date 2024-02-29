@@ -1,4 +1,4 @@
-function ColorIDE(color)
+function ColorSH(color)
     color = color or "rose-pine"
     vim.cmd.colorscheme(color)
 
@@ -7,4 +7,4 @@ function ColorIDE(color)
 
 end
 
-ColorIDE()
+ColorSH()
