@@ -1,1 +1,4 @@
-require("jlister")
+require("options")
+require("remaps")
+require("vimplugins")
+
