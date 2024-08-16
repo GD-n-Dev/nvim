@@ -41,8 +41,6 @@ Plug('~/my-prototype-plugin')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.8' })
 
-Plug('m4xshen/autoclose.nvim')
-
 Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
 
 --  Uncomment the two plugins below if you want to manage the language servers from neovim

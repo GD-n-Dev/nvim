@@ -2,6 +2,7 @@ local o = vim.opt
 
 o.number = true
 o.relativenumber = true
+o.scrolloff = 10
 o.softtabstop = 0
 o.tabstop = 4
 o.shiftwidth = 2
@@ -15,6 +16,7 @@ o.undofile = true
 o.ignorecase = true
 o.smartcase = true
 o.signcolumn = 'yes'
+o.colorcolumn = "80"
 o.updatetime = 250
 o.splitright = true
 o.splitbelow = true
@@ -22,3 +24,4 @@ o.splitbelow = true
 o.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 o.cursorline = true
 o.hlsearch = true
+
