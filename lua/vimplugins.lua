@@ -38,7 +38,6 @@ Plug('ThePrimeagen/harpoon', { ['branch'] = 'harpoon2', ['requires'] = {{'nvim-l
 Plug('nvim-lualine/lualine.nvim')
 Plug('nvim-tree/nvim-web-devicons')
 
-
 vim.call('plug#end')
 
 -- Color schemes should be loaded after plug#end().
