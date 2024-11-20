@@ -13,7 +13,11 @@ Map("", "<up>", "<nop>")
 Map("", "<down>", "<nop>")
 Map("", "<left>", "<nop>")
 Map("", "<right>", "<nop>")
-Map("n", "<ESC>", "")
+Map("n", "<leader>c", ":nohl<CR>")
+Map("n", "<leader>r", ":so %<CR>")
+Map("n", "<leader>s", ":w<CR>")
+Map("n", "<leader>q", ":qa!<CR>")
+Map("n", "<leader>pv", ":Ex<CR>")
 
 -- SHIFTING GROUPED TEXT UP OR DOWN
 Map("v", "J", ":m '>+1<CR>gv=gv")
@@ -24,8 +28,8 @@ Map("v", "<", "<gv")
 Map("v", ">", ">gv")
 
 -- BUFFER
-Map("n", "<TAB>", ":bn<CR>")
-Map("n", "<S-TAB>", ":bp<CR>")
+Map("n", "<leader><TAB>", ":bn<CR>")
+Map("n", "<leader><S-TAB>", ":bp<CR>")
 
 -- LSP
 Map("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>")
