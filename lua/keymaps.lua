@@ -30,10 +30,3 @@ Map("v", ">", ">gv")
 -- BUFFER
 Map("n", "<leader><TAB>", ":bn<CR>")
 Map("n", "<leader><S-TAB>", ":bp<CR>")
-
--- LSP
-Map("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>")
-Map("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
-Map("n", "K", ":lua vim.lsp.buf.hover()<CR>")
-Map("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
-Map("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")

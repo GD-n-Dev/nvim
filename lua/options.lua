@@ -4,6 +4,7 @@ local o = vim.opt
 o.clipboard = 'unnamedplus'
 o.completeopt = {'menu', 'menuone', 'noselect'}
 o.mouse = 'a'
+o.signcolumn = 'yes'
 
 -- Tab
 o.tabstop = 4
@@ -22,6 +23,6 @@ o.showmode = false
 
 -- Searching
 o.incsearch = true
-o.hlsearch = false
+o.hlsearch = true
 o.ignorecase = true
 o.smartcase = true
