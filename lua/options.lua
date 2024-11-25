@@ -1,3 +1,5 @@
+local vim = vim
+local g = vim.g
 local o = vim.opt
 
 -- Misc
@@ -26,3 +28,6 @@ o.incsearch = true
 o.hlsearch = true
 o.ignorecase = true
 o.smartcase = true
+
+-- Netrw
+g.netrw_banner = 0
