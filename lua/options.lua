@@ -30,4 +30,4 @@ o.ignorecase = true
 o.smartcase = true
 
 -- Netrw
-g.netrw_banner = 0
+-- g.netrw_banner = 0
