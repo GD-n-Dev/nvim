@@ -55,6 +55,15 @@ Plug("williamboman/mason-lspconfig.nvim")
 Plug("m4xshen/autoclose.nvim")
 Plug("windwp/nvim-ts-autotag")
 
+-- Buffers
+Plug("nvim-lua/plenary.nvim")
+Plug("ThePrimeagen/harpoon", {
+    ["branch"] = "harpoon2",
+    ["requires"] = {{ "nvim-lua/plenary.nvim" }}
+})
+
+
+
 
 vim.call('plug#end')
 
