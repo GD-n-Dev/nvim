@@ -41,15 +41,19 @@ vim.call('plug#begin')
 -- Place my Plugins below
 
 
-
+-- Highlight Syntax
 Plug("nvim-treesitter/nvim-treesitter", { ["do"] = ":TSUpdate"})
 
+-- LSP Config
 Plug("neovim/nvim-lspconfig")
 Plug("hrsh7th/nvim-cmp")
 Plug("hrsh7th/cmp-nvim-lsp")
 Plug("williamboman/mason.nvim")
 Plug("williamboman/mason-lspconfig.nvim")
 
+-- AutoClose
+Plug("m4xshen/autoclose.nvim")
+Plug("windwp/nvim-ts-autotag")
 
 
 vim.call('plug#end')
