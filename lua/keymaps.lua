@@ -28,8 +28,8 @@ Map("v", "<", "<gv")
 Map("v", ">", ">gv")
 
 -- BUFFER
-Map("n", "<leader><TAB>", ":bn<CR>")
-Map("n", "<leader><S-TAB>", ":bp<CR>")
+Map("n", "<A-j>", ":bn<CR>")
+Map("n", "<A-k>", ":bp<CR>")
 
 
 
