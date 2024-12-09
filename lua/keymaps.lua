@@ -26,14 +26,3 @@ Map("v", "K", ":m '<-2<CR>gv=gv")
 -- INDENTING
 Map("v", "<", "<gv")
 Map("v", ">", ">gv")
-
--- BUFFER
-Map("n", "<A-j>", ":bn<CR>")
-Map("n", "<A-k>", ":bp<CR>")
-
-
-
-
-
-
-
