@@ -13,7 +13,7 @@ Map("", "<up>", "<nop>")
 Map("", "<down>", "<nop>")
 Map("", "<left>", "<nop>")
 Map("", "<right>", "<nop>")
-Map("n", "<leader>c", ":nohl<CR>")
+Map("n", "<Esc>", ":nohl<CR>")
 Map("n", "<leader>r", ":so %<CR>")
 Map("n", "<leader>s", ":w<CR>")
 Map("n", "<leader>q", ":qa!<CR>")
@@ -30,3 +30,10 @@ Map("v", ">", ">gv")
 -- BUFFER
 Map("n", "<leader><TAB>", ":bn<CR>")
 Map("n", "<leader><S-TAB>", ":bp<CR>")
+
+
+
+
+
+
+
