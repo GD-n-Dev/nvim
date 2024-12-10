@@ -31,7 +31,7 @@ Map("v", ">", ">gv")
 
 -- NAVIGATE
 Map("n", "<leader>pv", ":Ex<CR>")
-Map("n", "<C-d", "<C-d>zz")
-Map("n", "<C-u", "<C-u>zz")
+Map("n", "<C-d>", "<C-d>zz")
+Map("n", "<C-u>", "<C-u>zz")
 Map("n", "n", "nzzzv")
 Map("n", "N", "Nzzzv")
