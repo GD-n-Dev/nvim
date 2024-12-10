@@ -1,3 +1,6 @@
+local vim = vim
+
+
 function Map(mode, lhs, rhs, opts)
 	local options = { noremap = true, silent = true }
 	if opts then
@@ -14,10 +17,9 @@ Map("", "<down>", "<nop>")
 Map("", "<left>", "<nop>")
 Map("", "<right>", "<nop>")
 Map("n", "<Esc>", ":nohl<CR>")
-Map("n", "<leader>r", ":so %<CR>")
+Map("n", "<leader>r", ":so<CR>")
 Map("n", "<leader>s", ":w<CR>")
 Map("n", "<leader>q", ":qa!<CR>")
-Map("n", "<leader>pv", ":Ex<CR>")
 
 -- SHIFTING GROUPED TEXT UP OR DOWN
 Map("v", "J", ":m '>+1<CR>gv=gv")
@@ -26,3 +28,10 @@ Map("v", "K", ":m '<-2<CR>gv=gv")
 -- INDENTING
 Map("v", "<", "<gv")
 Map("v", ">", ">gv")
+
+-- NAVIGATE
+Map("n", "<leader>pv", ":Ex<CR>")
+Map("n", "<C-d", "<C-d>zz")
+Map("n", "<C-u", "<C-u>zz")
+Map("n", "n", "nzzzv")
+Map("n", "N", "Nzzzv")
