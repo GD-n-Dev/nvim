@@ -44,6 +44,9 @@ vim.call('plug#begin')
 -- Highlight Syntax
 Plug("nvim-treesitter/nvim-treesitter", { ["do"] = ":TSUpdate"})
 
+Plug('nvim-lua/plenary.nvim')
+Plug('nvim-telescope/telescope.nvim', { ['tag'] = '0.1.x' })
+
 -- LSP Config
 Plug("neovim/nvim-lspconfig")
 Plug("hrsh7th/nvim-cmp")
@@ -56,14 +59,16 @@ Plug("m4xshen/autoclose.nvim")
 Plug("windwp/nvim-ts-autotag")
 
 -- Buffers
-Plug("nvim-lua/plenary.nvim")
 Plug("ThePrimeagen/harpoon", {
     ["branch"] = "harpoon2",
     ["requires"] = {{ "nvim-lua/plenary.nvim" }}
 })
 
+-- LuaLine
+Plug("nvim-lualine/lualine.nvim")
+Plug("nvim-tree/nvim-web-devicons")
 
-
+Plug('junegunn/vim-easy-align')
 
 vim.call('plug#end')
 
