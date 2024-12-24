@@ -32,7 +32,7 @@ o.cursorline = true
 o.splitbelow = true
 o.splitright = true
 -- o.termguicolors = true
--- o.showmode = false
+o.showmode = false
 
 -- Searching
 o.incsearch = true
