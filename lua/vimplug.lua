@@ -25,7 +25,6 @@ Plug("williamboman/mason-lspconfig.nvim")
 
 -- AutoClose
 Plug("m4xshen/autoclose.nvim")
-Plug("windwp/nvim-ts-autotag")
 
 -- Buffers
 Plug("ThePrimeagen/harpoon", {
