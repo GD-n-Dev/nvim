@@ -17,9 +17,6 @@ Map("", "<down>", "<nop>")
 Map("", "<left>", "<nop>")
 Map("", "<right>", "<nop>")
 Map("n", "<Esc>", ":nohl<CR>")
-Map("n", "<leader>r", ":so<CR>")
-Map("n", "<leader>s", ":w<CR>")
-Map("n", "<leader>q", ":qa!<CR>")
 
 -- SHIFTING GROUPED TEXT UP OR DOWN
 Map("v", "J", ":m '>+1<CR>gv=gv")
@@ -36,5 +33,3 @@ Map("n", "<C-u>", "<C-u>zz")
 Map("n", "n", "nzzzv")
 Map("n", "N", "Nzzzv")
 
--- EDITING
-Map("n", "<leader>fm", "gg<S-v>G=")

@@ -1,5 +1,5 @@
 local vim = vim
--- local g = vim.g
+local g = vim.g
 local o = vim.opt
 
 -- Misc
@@ -41,4 +41,4 @@ o.ignorecase = true
 o.smartcase = true
 
 -- Netrw
--- g.netrw_banner = 0
+g.netrw_banner = 0
