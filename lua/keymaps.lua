@@ -1,6 +1,3 @@
-local vim = vim
-
-
 function Map(mode, lhs, rhs, opts)
     local options = { noremap = true, silent = true }
     if opts then
@@ -32,4 +29,19 @@ Map("n", "<C-d>", "<C-d>zz")
 Map("n", "<C-u>", "<C-u>zz")
 Map("n", "n", "nzzzv")
 Map("n", "N", "Nzzzv")
+
+Map("n", "<C-b>", ":!odin run .<CR>")
+
+-- Diagnostics
+Map("n", "<leader>]", vim.diagnostic.goto_next)
+Map("n", "<leader>[", vim.diagnostic.goto_prev)
+
+-- Markdown open to browser
+Map("n", "<leader>md", function ()
+    local file = vim.fn.expand('%')
+    print(file)
+    vim.cmd("!start "..file)
+end)
+
+
 

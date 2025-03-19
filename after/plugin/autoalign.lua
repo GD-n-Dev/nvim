@@ -1,5 +1,3 @@
-local vim = vim
-
 function Map(mode, lhs, rhs, opts)
     local options = { noremap = true, silent = true }
     if opts then

@@ -1,10 +1,8 @@
-local vim = vim
-
 require('mason').setup({})
 require('mason-lspconfig').setup({
     -- Replace the language servers listed here
     -- with the ones you want to install
-    ensure_installed = { 'ols', 'lua_ls', 'bashls', 'cssls', 'marksman', 'dockerls', 'html', 'ts_ls', 'jsonls', 'pylyzer' },
+    ensure_installed = { 'ols', 'lua_ls', 'bashls', 'cssls', 'marksman', 'dockerls', 'html', 'ts_ls', 'jsonls' },
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({})

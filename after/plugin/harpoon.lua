@@ -1,4 +1,3 @@
-local vim = vim
 local harpoon = require("harpoon")
 
 -- REQUIRED

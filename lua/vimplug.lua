@@ -1,4 +1,3 @@
-local vim = vim
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
@@ -23,8 +22,9 @@ Plug("hrsh7th/nvim-cmp")
 Plug("williamboman/mason.nvim")
 Plug("williamboman/mason-lspconfig.nvim")
 
--- AutoClose
+-- Formatting
 Plug("m4xshen/autoclose.nvim")
+Plug('junegunn/vim-easy-align')
 
 -- Buffers
 Plug("ThePrimeagen/harpoon", {
@@ -36,7 +36,9 @@ Plug("ThePrimeagen/harpoon", {
 Plug("nvim-lualine/lualine.nvim")
 Plug("nvim-tree/nvim-web-devicons")
 
-Plug('junegunn/vim-easy-align')
+-- Colorscheme
+Plug("ellisonleao/gruvbox.nvim")
+
 
 vim.call('plug#end')
 
