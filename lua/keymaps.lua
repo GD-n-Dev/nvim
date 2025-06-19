@@ -35,13 +35,3 @@ Map("n", "<C-b>", ":!odin run .<CR>")
 -- Diagnostics
 Map("n", "<leader>]", vim.diagnostic.goto_next)
 Map("n", "<leader>[", vim.diagnostic.goto_prev)
-
--- Markdown open to browser
-Map("n", "<leader>md", function ()
-    local file = vim.fn.expand('%')
-    print(file)
-    vim.cmd("!start "..file)
-end)
-
-
-
