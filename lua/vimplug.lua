@@ -19,6 +19,11 @@ Plug("hrsh7th/cmp-path")
 Plug("hrsh7th/cmp-cmdline")
 Plug("hrsh7th/nvim-cmp")
 
+Plug("mason-org/mason.nvim")
+Plug("mason-org/mason-lspconfig.nvim", {
+    ["requires"] = { { "mason-org/mason.nvim", { ["opts"] = {} } }, "neovim/nvim-lspconfig" }
+})
+
 -- snip
 Plug("hrsh7th/vim-vsnip")
 Plug("hrsh7th/vim-vsnip-integ")
@@ -31,7 +36,7 @@ Plug('junegunn/vim-easy-align')
 -- Buffers
 Plug("ThePrimeagen/harpoon", {
     ["branch"] = "harpoon2",
-    ["requires"] = {{ "nvim-lua/plenary.nvim" }}
+    ["requires"] = { "nvim-lua/plenary.nvim" }
 })
 
 -- LuaLine
