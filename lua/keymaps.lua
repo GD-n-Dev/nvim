@@ -30,8 +30,3 @@ Map("n", "<C-u>", "<C-u>zz")
 Map("n", "n", "nzzzv")
 Map("n", "N", "Nzzzv")
 
-Map("n", "<C-b>", ":!odin run .<CR>")
-
--- Diagnostics
-Map("n", "<leader>]", vim.diagnostic.goto_next)
-Map("n", "<leader>[", vim.diagnostic.goto_prev)
