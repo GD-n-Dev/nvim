@@ -30,3 +30,6 @@ Map("n", "<C-u>", "<C-u>zz")
 Map("n", "n", "nzzzv")
 Map("n", "N", "Nzzzv")
 
+-- Diagnostics
+Map("n", "<leader>[", vim.diagnostic.goto_prev)
+Map("n", "<leader>]", vim.diagnostic.goto_next)
