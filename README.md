@@ -1,1 +1,2 @@
-My nvim config setup so I can use Git to update and save my config. I will be able to clone to any device I am using to get my config setup the same everywhere.
+# My Custom Neovim Config
+- 2025/07/21
