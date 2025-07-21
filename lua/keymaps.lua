@@ -1,35 +1,43 @@
-function Map(mode, lhs, rhs, opts)
-    local options = { noremap = true, silent = true }
-    if opts then
-        options = vim.tbl_extend("force", options, opts)
-    end
-    vim.keymap.set(mode, lhs, rhs, options)
-end
-
+local vim = vim
 vim.g.mapleader = ' '
 
+vim.keymap.set("n", "<leader>rc", ":e ~/.config/nvim/<CR>", { desc = "Edit Config" })
+
 -- Custom setup
-Map("", "<up>", "<nop>")
-Map("", "<down>", "<nop>")
-Map("", "<left>", "<nop>")
-Map("", "<right>", "<nop>")
-Map("n", "<Esc>", ":nohl<CR>")
+vim.keymap.set("", "<up>", "<nop>")
+vim.keymap.set("", "<down>", "<nop>")
+vim.keymap.set("", "<left>", "<nop>")
+vim.keymap.set("", "<right>", "<nop>")
+vim.keymap.set("n", "<Esc>", ":nohl<CR>")
 
 -- SHIFTING GROUPED TEXT UP OR DOWN
-Map("v", "J", ":m '>+1<CR>gv=gv")
-Map("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 
 -- INDENTING
-Map("v", "<", "<gv")
-Map("v", ">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
 -- NAVIGATE
-Map("n", "<leader>pv", ":Ex<CR>")
-Map("n", "<C-d>", "<C-d>zz")
-Map("n", "<C-u>", "<C-u>zz")
-Map("n", "n", "nzzzv")
-Map("n", "N", "Nzzzv")
+vim.keymap.set("n", "<leader>pv", ":Ex<CR>")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
--- Diagnostics
-Map("n", "<leader>[", vim.diagnostic.goto_prev)
-Map("n", "<leader>]", vim.diagnostic.goto_next)
+vim.keymap.set("n", "<leader>pa", function()
+    local path = vim.fn.expand("%:p")
+    vim.fn.setreg("+", path)
+    print("File: ", path)
+end)
+
+local augroup = vim.api.nvim_create_augroup("UserConfig", {})
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+    group = augroup,
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+})
+
+
