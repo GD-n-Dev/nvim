@@ -1,47 +1,45 @@
 local vim = vim
 
-
 vim.g.mapleader = ' '
 
 -- Misc
-o.clipboard = 'unnamedplus'
-o.completeopt = {'menu', 'menuone', 'noselect'}
-o.mouse = 'a'
-o.signcolumn = 'yes'
+vim.o.clipboard = 'unnamedplus'
+vim.o.mouse = 'a'
+vim.o.signcolumn = 'yes'
 
 
 -- Tab
-o.tabstop = 4
-o.softtabstop = 4
-o.shiftwidth = 4
-o.expandtab = true
-o.smartindent = true
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+vim.o.smartindent = true
 
-o.wrap = false
-o.swapfile = false
-o.backup = false
-o.undofile = true
-o.undodir = os.getenv("HOME") .. "/.nvim/undodir"
-o.scrolloff = 8
-o.updatetime = 50
+vim.o.wrap = false
+vim.o.swapfile = false
+vim.o.backup = false
+vim.o.undofile = true
+vim.o.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+vim.o.scrolloff = 8
+vim.o.updatetime = 50
 
 -- UI Config
-o.number = true
-o.relativenumber = true
-o.cursorline = true
-o.splitbelow = true
-o.splitright = true
-o.termguicolors = true
-o.showmode = false
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.cursorline = true
+vim.o.splitbelow = true
+vim.o.splitright = true
+vim.o.termguicolors = true
+vim.o.showmode = false
 
 -- Searching
-o.incsearch = true
-o.hlsearch = true
-o.ignorecase = true
-o.smartcase = true
+vim.o.incsearch = true
+vim.o.hlsearch = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- Netrw
-g.netrw_banner = 0
+vim.g.netrw_banner = 0
 
 
 -- KeyMaps
