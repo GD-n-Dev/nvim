@@ -19,7 +19,6 @@ o.wrap = false
 o.swapfile = false
 o.backup = false
 o.undofile = true
--- print(os.getenv("HOME") .. "/.nvim/undodir")
 o.undodir = os.getenv("HOME") .. "/.nvim/undodir"
 o.scrolloff = 8
 o.updatetime = 50
@@ -30,7 +29,7 @@ o.relativenumber = true
 o.cursorline = true
 o.splitbelow = true
 o.splitright = true
--- o.termguicolors = true
+o.termguicolors = true
 o.showmode = false
 
 -- Searching
