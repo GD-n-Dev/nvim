@@ -14,6 +14,8 @@ Plug('hrsh7th/cmp-cmdline')
 Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-vsnip')
 
+Plug('windwp/nvim-autopairs')
+
 Plug('ellisonleao/gruvbox.nvim')
 
 -- -- Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
