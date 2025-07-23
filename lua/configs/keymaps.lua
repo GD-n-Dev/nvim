@@ -1,8 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.localleader = ' '
 
-vim.keymap.set("n", "<leader>rc", ":e ~/.config/nvim/<CR>", { desc = "Edit Config" })
-
 -- Custom setup
 vim.keymap.set("", "<up>", "<nop>")
 vim.keymap.set("", "<down>", "<nop>")
@@ -19,7 +17,7 @@ vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
 -- NAVIGATE
-vim.keymap.set("n", "<leader>rc", ":e ~/.config/nvim/init.lua<CR>")
+vim.keymap.set("n", "<leader>rc", ":e ~/.config/nvim/<CR>")
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
