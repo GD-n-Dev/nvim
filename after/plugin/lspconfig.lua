@@ -10,8 +10,10 @@ local on_attach = function(_, bufnr)
     vim.keymap.set('n', 'gr', builtin.lsp_references, opts)
     vim.keymap.set('n', 'gi', builtin.lsp_implementations, opts)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-    vim.keymap.set('n', '<leader>e', builtin.diagnostics, opts)
-
+    vim.keymap.set('n', '<leader>w', builtin.diagnostics, opts)
+    vim.keymap.set('n', '<leader>e', vim.diagnostics.open_float(), opts)
+    vim.keymap.set('n', '<leader>[', vim.diagnostics.goto_prev(), opts)
+    vim.keymap.set('n', '<leader>]', vim.diagnostics.goto_next(), opts)
 end
 
 vim.lsp.config['ts_ls'] = {
