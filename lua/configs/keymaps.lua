@@ -30,6 +30,10 @@ vim.keymap.set("n", "<leader>pa", function()
     print("File: ", path)
 end)
 
+-- Registers
+--vim.keymap.set('v', 'd', '_d')
+
+-- DIAGNOSTICS
 vim.keymap.set("n", "<leader>e", function()
     vim.diagnostic.open_float()
 end)
