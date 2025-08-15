@@ -18,6 +18,10 @@ Plug('windwp/nvim-autopairs')
 
 Plug('ellisonleao/gruvbox.nvim')
 
+Plug('prettier/vim-prettier', { ['do'] = 'npm install --frozen-lockfile --production' })
+
+Plug('dense-analysis/ale')
+
 -- -- Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 -- Plug('fatih/vim-go', { ['tag'] = '*' })
 --
