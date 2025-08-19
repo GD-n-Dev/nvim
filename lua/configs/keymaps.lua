@@ -36,7 +36,7 @@ vim.keymap.set("n", "<C-b>", function()
     local ext = string.match(file, "%.([^%.]+)$")
     if ext == "odin" then
         print("Building odin")
-        vim.cmd("odin run .")
+        vim.cmd("!odin run .")
     elseif ext == "lua" then
         print("Building lua")
         vim.cmd("so")
