@@ -30,8 +30,18 @@ vim.keymap.set("n", "<leader>pa", function()
     print("File: ", path)
 end)
 
--- Registers
---vim.keymap.set('v', 'd', '_d')
+-- BUILD
+vim.keymap.set("n", "<C-b>", function()
+    local file = vim.fn.expand("%")
+    local ext = string.match(file, "%.([^%.]+)$")
+    if ext == "odin" then
+        print("Building odin")
+        vim.cmd("odin run .")
+    elseif ext == "lua" then
+        print("Building lua")
+        vim.cmd("so")
+    end 
+end)
 
 -- DIAGNOSTICS
 vim.keymap.set("n", "<leader>e", function()
